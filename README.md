@@ -39,4 +39,8 @@ Above is the original image augmentation setup used in the paper linked above. T
 
 The authors of the paper found that the primary contributors to increased accuracy of the network was through the colour jittering and cropping. To test this almost all transformations were removed from both T and T’ except for a crop and flip to still maintain some difference between the two networks’ input image. The result was a testing accuracy of 37.68% and a training time of 41 minutes on a ResNet18 model. This finding was surprising, as the drop in accuracy was very small even though almost all augmentations were removed. The highest performance was found to be when T’ was augmented with a 1.0 probability on all but the flip transformations, whereas the T augmentation set was kept as per baseline. This resulted in a testing accuracy of 39.60% with a training time of 39 minutes. This augmentation set was maintained as the optimum and the files are named as such.
 
+### How to run?
 
+1. Upload the Colab files to your drive, open in Colab
+2. Edit the directory paths in block 3 to point correctly to your dataset location
+3. Run the blocks sequentially
